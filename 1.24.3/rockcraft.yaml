@@ -7,10 +7,9 @@ description: |
 platforms:
   amd64:
 
-entrypoint-service: ztunnel
 services:
   ztunnel:
-    command: /bin/ztunnel [ ]
+    command: /bin/ztunnel proxy
     override: replace
     startup: enabled
 
