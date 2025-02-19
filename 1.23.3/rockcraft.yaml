@@ -1,4 +1,4 @@
-name: istio-ztunnel
+name: ztunnel
 base: ubuntu@24.04
 version: '1.23.3'
 summary: Ztunnel provides an implementation of the ztunnel component of ambient mesh
