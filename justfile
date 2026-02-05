@@ -1,7 +1,7 @@
 set quiet # Recipes are silent by default
 set export # Just variables are exported to environment variables
 
-rock_name := `echo ${PWD##*/} | sed 's/^istio-//;s/-rock//'`
+rock_name := `awk '/^name:/{print $2}' */rockcraft.yaml | head -1`
 latest_version := `find . -maxdepth 1 -type d | sort -V | tail -n1 | sed 's@./@@'`
 
 [private]
