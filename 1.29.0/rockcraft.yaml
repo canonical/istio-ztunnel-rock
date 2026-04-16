@@ -12,6 +12,9 @@ services:
     command: /bin/ztunnel proxy
     override: replace
     startup: enabled
+environment:
+  PEBBLE: /run/pebble
+  PEBBLE_COPY_ONCE: /var/lib/pebble/default
 
 parts:
   istio-ztunnel:
@@ -29,7 +32,6 @@ parts:
   stage-dependency-packages:
     plugin: nil
     stage-packages:
-      - ca-certificates
       - libc6  # glibc
       - iptables  # includes both iptables and ip6tables
       - conntrack  # libnetfilter_conntrack and libnfnetlink (and maybe libmnl?)
