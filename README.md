@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> Moved to https://github.com/canonical/service-mesh/tree/main/rocks/istio-ztunnel-rock.
+> This repo is no longer maintained.
+
+
 # ztunnel-rock
 
 [![Open a PR to OCI Factory](https://github.com/canonical/ztunnel-rock/actions/workflows/release-oci-factory.yaml/badge.svg)](https://github.com/canonical/ztunnel-rock/actions/workflows/release-oci-factory.yaml)
